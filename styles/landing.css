@@ -1,0 +1,26 @@
+/*The side bar*/
+.sidebar {
+    height: 100em; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0;
+    right: 0;
+    border: 3px dashed black;
+    background: #eb10ff; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding-right: 100px;
+ 
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #8f3636;
+    overflow: hidden;
+  }
