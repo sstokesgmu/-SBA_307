@@ -30,18 +30,11 @@
     padding-right: 10px;
 }
 
-div{
-    width: 100px;
-    height: 50px;
-    border: 1px solid;
-    position:relative;
-    top: 3px;
-    left:3em;
-}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #8f3636;
     overflow: hidden;  
-    width:  50em; /*find the correct positioning*/
+    width:  70%; /*find the correct positioning*/
 }
