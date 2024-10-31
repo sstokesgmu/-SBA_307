@@ -23,4 +23,7 @@
     padding: 15px 30px; /* Adjusts padding */
     width: 68.5em;
 }
-
+.card-container div{
+    display:flex;
+    height: 100%;
+}
