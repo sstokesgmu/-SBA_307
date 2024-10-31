@@ -8,66 +8,155 @@
     <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
 
     <style>
-       .card-container{
+         .card-container {
+            width:75%;
+            height: 100px;
+            display: flex;   
+            padding: 0;
+        }
+        .img-container {
+            border: 1px solid black;
+            flex: 1; 
+        }
+        .text-container {
+          border: 1px solid black;
+          flex: 1; 
+          display: flex;
+          flex-direction: column;
+          overflow:hidden;
+        }
         
-        border: 10px solid black;
-        width:300px;
-        height: 250px;
+        .img-container img {  
+          width:100%;
+          height:100%;
+        }
+
+  
+
+      #Login_pic img{
+        width:100%;
+        height:100%;
+      }
+
+      #transaction_holder{
         display: flex; 
-        justify-content: stretch;
-        
-      }
-    .img-container img {
-        max-width: 100%; 
-        max-height: 100%;          
-    }
-    .img-container {
-        height: 25px;
-        border: 1px solid black;
-        flex: 0 1 auto;
-        flex-grow: 1;
-      }
-    
-    .card-container p, .card-container h1 {
-        margin: 8px;       
+        justify-items: center;
+        flex-flow:column wrap;
+        margin: 1% 5%;
+      } 
+      #transaction_holder input{
+        width:80%;
       }
     </style>
-<body>
+<body class ="container">
+  <header class="row">
     <nav id="navBar" class="navbar navbar-expand-lg">
-        <section class="container-fluid">
-          <a class="navbar-brand" href="#">BudgetMe</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/landing.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/account.html">Account</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/index.html">About Me</a>
-              </li>
-            </ul>
-          </div>
+      <section class="container-fluid">
+        <a class="navbar-brand" href="#">BudgetMe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/landing.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/account.html">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/index.html">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+  <main class="row">
+    <section id="login_initial" class="row">
+      <section id="Login_pic" class="col-6">
+        <div>
+          <img src="../images/metaphor.jpg">
+        </div>
+       </section>
+      <section class="col-6">
+        <section id="login_elements">
+            <div>
+              <h2>Login</h2>
+            </div>
+            <div>
+                <form> <!--HTML Form-->
+                    <p>Email or Username: <input type="email"  autocomplete="off" name="email" type="text" name="username"></p> <!--How do I add two different input types to one text box-->
+                    <p>Password: <input type="password" name="password"></p>
+                    <input type="submit" value="Log in">
+                    <hr> <!--Why does break not work here-->
+                    <p>Forgot username</p>
+                    <p>Forgot password</p>
+                </form>
+            </div>
+            <div></div>
         </section>
-      </nav>
+      </section>
+    </section>
+    <br>
+    <section id="transaction_table" class="row">
+      <div id="transaction_holder" class="col-12" style="margin-top:1%">
+        <form>
+          <input type="text" placeholder="Search..">
+          <button type="submit">Submit</button>
+        </form>
+        <h2>Transaction Breakdown</h2>
+        <table>
+          <tr>
+            <th>Icon</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>blank</td>
+            <td>Amazon</td>
+            <td>$7.38</td>
+            <td>Tuesday July 2nd</td>
+          </tr>
+          <tr>
+            <td>blank</td>
+            <td>Walgreens</td>
+            <td>$ 15.00</td>
+            <td>Tuesday July 2nd</td>
+          </tr>
+          <tr>
+            <td>blank</td>
+            <td>Dentist</td>
+            <td>$ 234.00</td>
+            <td>Tuesday July 2nd</td>
+          </tr>
+          <tr>
+            <td>blank</td>
+            <td>HBO Max</td>
+            <td>$9.99</td>
+            <td>Tuesday July 2nd</td>
+          </tr>
+        </table>
+      
+      </div>
+      
 
-    <h1>Welcome to the account page</h1>
 
-    <hr>
+    </section>
 
-    <h1>Wish List Section</h1>
 
-    <section class="a">
-      <div class="card-container">
-        <div class="img-container">
-        </div>
-        <div class="img-container">
-        </div>
-      </div>  
+  </main>
+  <footer class="row"></footer>
+ 
+    
+
+   
+
+
+
+
+    
   </section>
 
 
