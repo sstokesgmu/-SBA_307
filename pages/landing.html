@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/landing.css">
+
+    <title>Landing</title>
     <style> 
-        .a{
+        .a {
             display: flex;   
             flex-shrink: inherit;
-            flex-wrap: wrap;
         }  
-
-        .card-container{
+        .card-container {
         
             border: 10px solid black;
             width:300px;
             height: 250px;
             display: flex; 
-            justify-content: stretch;
-            
-       }
+            justify-content: stretch;    
+        }
         .img-container img {
             max-width: 100%; 
             max-height: 100%;          
@@ -31,55 +31,121 @@
             flex: 0 1 auto;
             flex-grow: 1;
         }
-        
         .card-container p, .card-container h1 {
             margin: 8px;       
+        }     
+
+        .row-Account-graph{
+          display:flex;
+          flex-direction: column; 
         }
+        #sidebar{
+           position: fixed;
+           right: 10px;
+           width: 250px;
+           border: 3px solid #73AD21;
+           padding: 10px; 
+        }
+
+        #sidebar p{
+          text-align:center;
+        }
+        
     </style>
 </head>
-<body>
-    <section class="topnav"><!--Page navigation-->
-        <ul>
-            <li><a class="active" href="../pages/landing.html">Home</a></li>
-            <li><a href="../pages/account.html">News</a></li>
-            <li><a href="../pages/index.html">About</a></li>
-        </ul>
-    </section>
-    
-   
-    <section class="main"><!--Main Page-->
-        <section> <!--Account Information-->
-            <h1>500</h1>
-            <label for="accounts"> Choose an account</label> 
-                <select name="accounts">
-                    <option value="CHECKING-2345">CHECKING *2345</option>
-                    <option value="Savings-9834">SAVINGS *9834</option>
-                </select>
-        </section>
-        
-        <section> <!--Graph section-->
-            <img src="../images/graph-placeholder.jpg" alt="cool image" height="500" width="500">    
-        </section> 
-    </section>
-
-    <div class="card-container">
-        <div class="img-container">
-
-        </div>
-        <div class="img-container">
-
-        </div>
-        
-    </div>
-    <section class="a">
-       
-    </section>
-    <section class="sidebar"> <!--Sidebar-->
-        <aside>
-            <div data-testid="PositionCell" style="height: 60px; left: 0px; position: absolute; top: 112px; width: 100%;">
+<body class="container">
+    <header class="row">
+        <nav id="navBar" class="navbar navbar-expand-lg col-12">
+          <section class="container">
+            <a class="navbar-brand" href="#">BudgetMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../pages/landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/account.html">Account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/index.html">About Me</a>
+                </li>
+              </ul>
             </div>
-        </aside>
-    </section>
-
+          </section>
+        </nav>
+    </header>
+    <main class="row">
+      <section class="row Account graph">
+        <div class="col-10">
+            <h1>$ 500</h1>
+            <label for="accounts"> Select an account</label> 
+          <select class="col-2" name="accounts">
+            <option value="CHECKING-2345">CHECKING *2345</option>
+            <option value="Savings-9834">SAVINGS *9834</option>
+          </select>
+          <section> <!--Graph section-->
+            <img src="../images/graph-placeholder.jpg" alt="cool image" height="500" width="500">    
+          </section> 
+        </div>
+        <div id="sidebar" class="col-2"> 
+          <div id="cardTopic" style="border:1px solid black"> <!--align text-->
+            <p><b>Transactions in October</b></p>
+          </div>    
+          <div id="cardGroup" style="border:1px solid black">
+            <div > <!--align text-->
+              <p>hello</p>
+            </div> 
+            <div> <!--align text-->
+              <p>hello</p>
+            </div> 
+          </div>
+          <div id="cardTopic" style="border:1px solid black"> <!--align text-->
+            <p><b>Transactions in September</b></p>
+          </div>  
+          <div id="cardGroup" style="border:1px solid black">
+            <div > <!--align text-->
+              <p>hello</p>
+            </div> 
+            <div> <!--align text-->
+              <p>hello</p>
+            </div> 
+          </div>
+        </div>          
+      </section> 
+      
+      <section class="row d-flex flex-column">
+          <div class="card-container">
+            <div class="img-container">
+            </div>
+            <div class="img-container">
+            </div>
+          </div>  
+          <div class="card-container">
+            <div class="img-container">
+            </div>
+            <div class="img-container">
+            </div>
+          </div>  
+          <div class="card-container">
+            <div class="img-container">
+            </div>
+            <div class="img-container">
+            </div>
+          </div>  
+          <div class="card-container">
+            <div class="img-container">
+            </div>
+            <div class="img-container">
+            </div>
+          </div>  
+      </section>
+    </main> 
+    <footer class="row"></footer>
+  </section>
+  <!--Bootstrap Js-->
+  <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

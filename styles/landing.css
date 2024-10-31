@@ -1,40 +1,26 @@
 /*The side bar*/
 .sidebar {
-    height: 100em; /* Full-height: remove this if you want "auto" height */
-    width: 200px; /* Set the width of the sidebar */
+    height: 100em; 
+    width: 10em; 
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     top: 0;
     right: 0;
     border: 3px dashed black;
-    background: #eb10ff; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding:50px 50px 50px 25px;
 }
 
-/* Style page content */
 .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding-right: 100px;
- 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
 }
 
-#PositionCell {
-    height: 60px; 
-    width: 100%; 
-    left: 0px; 
-    position: relative; 
-    overflow: auto; 
-    border: 2px solid gray;
-    overflow:hidden;
-    padding-left: 10px;
-    padding-right: 10px;
+#navBar {
+    /* background-color; Custom background color */
+    padding: 15px 30px; /* Adjusts padding */
+    width: 68.5em;
 }
 
-
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #8f3636;
-    overflow: hidden;  
-    width:  70%; /*find the correct positioning*/
-}
