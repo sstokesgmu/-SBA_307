@@ -1,4 +1,4 @@
-Overview of SBA 307
+# Overview of SBA 307 \n
 Welcome to BudgetMe, a free and open-source budget management application. This app helps you manage your finances by tracking balances across multiple bank accounts and creating personalized savings plans to achieve your financial goals.
 
 Objective
