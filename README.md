@@ -1,12 +1,25 @@
 Overview of SBA 307
+Welcome to BudgetMe, a free and open-source budget management application. This app helps you manage your finances by tracking balances across multiple bank accounts and creating personalized savings plans to achieve your financial goals.
 
-Welcome to BudgetMe, a free and open source budget management application. Compare your finiances between your different bank accounts and set up plans to save you money.
-
-Objective:
+Objective
 This SBA will test your skills in creating a simple website with a clean layout and styling. Your website should have a well-developed HTML structure and follow good visual design methodologies in order to produce a satisfying user experience.
 
-Technical Specifications: 
-The site is split into three different pages: landing, account, and about me. Each page uses Bootstrap grid system to help align content into the center. While Flexbox is applied to more specific nested elements such as the _card container_ (landing page line 192-204). 
+Technical Specifications
+The site consists of three main pages: Landing, Account, and About Me. Each page uses the Bootstrap grid system for centering content, with a combination of Flexbox applied to specific elements, such as the card container on the landing page (lines 192-204).
 
-**Landing Page**
-The landing page will be the place where the user can see the status of their account with the graph, which is a place holder picture. They can change which account they see using the drop down. Using a a combination of selectors, pseudo selectors, attribute selectors, and combinators I was able to change the size of the text for the heading (landing line 28-30 and line 145) and the color of the drop down menu options (landing 41-47). The most unique part of the landing page is the side bar which will be used to for looking at the most recent transactions the user made. To make it is used a Bootstrap to contain it in the top row in the section with the account graph id. I gave it a column size of 3 which pushed it to the right side of the row. Then with CSS styles I applied a position property of fixed on the the full sidebar, then used I used the right property to affect the horizontal position of the object.
+Landing Page
+The Landing page displays an overview of the user’s financial status with a placeholder graph. Users can switch between different accounts using a dropdown menu.
+
+Notable features and customizations include:
+
+Text and Dropdown Styling: A combination of selectors, pseudo-selectors, attribute selectors, and combinators are used to style heading text (lines 28-30 and 145) and customize dropdown menu colors (lines 41-47).
+
+Sidebar: A distinctive feature of the landing page, the sidebar will display the user’s recent transactions. It’s positioned within the top row alongside the account graph section and assigned a Bootstrap column size of 3, which aligns it to the right inside the container (line 144 & 157). To give it a more fluid position, CSS is used to make the sidebar position: fixed, and position it to the right of the view port. (line 50-55) 
+
+The sidebar also includes a simple animation: when the cell blocks (e.g., those labeled "hello") are interacted with, their background color changes to a darker gray. ((line 67 - 75)
+
+Account Page
+The Account page serves as a template for future login and more complex information the user might need. It includes a login form and search bar, as well as a table for transaction information. While simpler than the Landing page, it includes a unique feature:
+
+Loading Bar: A CSS keyframes-based loading bar provides smooth animation. Currently, it loops continuously, animating the element width from 0% to 100% and back over the animation duration (line 31-51).
+
