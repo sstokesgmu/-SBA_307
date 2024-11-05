@@ -17,7 +17,7 @@ Notable features and customizations include:
 
 **Sidebar:** A distinctive feature of the landing page, the sidebar will display the user’s recent transactions. It’s positioned within the top row alongside the account graph section and assigned a Bootstrap column size of 3, which aligns it to the right inside the container (line 144 & 157). To give it a more fluid position, CSS is used to make the sidebar position: fixed, and position it to the right of the view port. (line 50-55) 
 
-The sidebar also includes a simple animation: when the cell blocks (e.g., those labeled "hello") are interacted with, their background color changes to a darker gray. ((line 67 - 75)
+The sidebar also includes a simple animation: when the cell blocks (e.g., those labeled "hello") are interacted with, their background color changes to a darker gray. (line 67-75)
 
 ### Account Page
 The Account page serves as a template for future login and more complex information the user might need. It includes a login form and search bar, as well as a table for transaction information. While simpler than the Landing page, it includes a unique feature:
